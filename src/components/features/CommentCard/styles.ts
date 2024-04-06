@@ -9,10 +9,11 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.1, 
     shadowRadius: 0.01 * width,
     shadowColor:theme.dark, 
-    shadowOffset: { height: 0.01 * width, width: 0 },
+    shadowOffset: { height: 0.007 * width, width: 0 },
     elevation: 3,
-    marginVertical: 0.01 * height,
+    marginTop: 0.01 * height,
     padding: 0.03 * width,
+    marginBottom: 0.007 * height,
   },
   title: {
     fontSize: width *  0.036,

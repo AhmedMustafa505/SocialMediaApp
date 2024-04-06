@@ -14,7 +14,7 @@ Posts and comments are fetched from the public API provided by [GoRest](https://
 
 ## Project Structure
 
-The application follows a modular and clean architecture for easy navigation and maintenance:
+The application follows a modular and clean architecture for easy navigation and maintenance
 
 ## Dependencies
 
@@ -30,3 +30,10 @@ The following are the main dependencies used in the project:
 - `expo-status-bar`
 - `react-native-safe-area-context`
 - `react-native-screens`
+
+## Running the Application
+
+- Clone the repository from GitHub.
+- Navigate to the project directory and install dependencies with npm install or yarn.
+- Start the application with expo start.
+- To run on a device or emulator, follow the instructions from the Expo CLI.
