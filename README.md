@@ -37,3 +37,10 @@ The following are the main dependencies used in the project:
 - Navigate to the project directory and install dependencies with npm install or yarn.
 - Start the application with expo start.
 - To run on a device or emulator, follow the instructions from the Expo CLI.
+
+
+![Alt text](/screenshots/PostsScreen.jpg)
+![Alt text](/screenshots/splash.jpg)
+![Alt text](/screenshots/PostDetailsComments.jpg)
+![Alt text](/screenshots/PostDetails.jpg)
+
