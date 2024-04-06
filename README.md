@@ -36,7 +36,15 @@ The following are the main dependencies used in the project:
 - Clone the repository from GitHub.
 - Navigate to the project directory and install dependencies with npm install or yarn.
 - Start the application with expo start.
-- To run on a device or emulator, follow the instructions from the Expo CLI.
+- Run the App on Your Device
+
+    - Android:
+     Open the Expo client app on your Android device and scan the QR code displayed in the Expo developer tools in your web browser. Alternatively, you can press a in the terminal where your Expo development server is running to open the 
+     app directly if you have an Android emulator installed and running.
+
+    - iOS:
+      Open the Camera app on your iOS device and scan the QR code displayed in the Expo developer tools in your web browser. You will receive a notification which, once tapped, opens the Expo client and loads your app. Note that due to 
+      Apple's restrictions, you might need to use the Expo client app to scan the QR code directly rather than using the Camera app.
 
 ## Application snapshots
 SplashScreen:
