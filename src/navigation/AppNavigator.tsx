@@ -7,7 +7,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { HomeScreen, PostDetailsScreen, SplashScreen } from "../screens";
 import { PostProps } from "../components/features/PostCard/interface";
 import { theme } from "../utils/theme";
-import { View } from "react-native";
+import { Dimensions, StyleSheet, View } from "react-native";
 
 export type RootStackParamList = {
   SplashScreen: undefined;
@@ -32,7 +32,7 @@ const AppNavigator: React.FC = () => {
           options={{
             headerTitle: "Posts",
             headerStyle: {
-              backgroundColor: "#0E51B6",
+              backgroundColor: "#1260d4",
             },
             headerTintColor: "#fff",
             headerTitleStyle: {
@@ -53,17 +53,7 @@ const AppNavigator: React.FC = () => {
                   onPress={() => navigation.goBack()}
                   labelVisible={false} // This will remove the 'Back' text
                   backImage={() => (
-                    <View
-                      style={{
-                        width: 42, // Set the width of the circle
-                        height: 42, // Set the height of the circle
-                        borderRadius: 21, // Half of width/height to make it a circle
-                        backgroundColor: "#FBFCFE1A", // Background color of the circle
-                        justifyContent: "center",
-                        alignItems: "center",
-                        margin: 2,
-                      }}
-                    >
+                    <View style={{}}>
                       <MaterialIcons name="arrow-back" size={21} color="#fff" />
                     </View>
                   )}
@@ -72,7 +62,7 @@ const AppNavigator: React.FC = () => {
             ),
             headerTitle: "Post details",
             headerStyle: {
-              backgroundColor: "#0E51B6",
+              backgroundColor: "#1260d4",
             },
             headerTintColor: "#fff",
             headerTitleStyle: {
@@ -86,5 +76,18 @@ const AppNavigator: React.FC = () => {
     </NavigationContainer>
   );
 };
+const { width, height } = Dimensions.get("window");
+
+const styles = StyleSheet.create({
+  backButtonContainer: {
+    width: width * 0.1,
+    height: width * 0.1,
+    borderRadius: 21,
+    backgroundColor: "#FBFCFE1A",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: height * 0.01,
+  },
+});
 
 export default AppNavigator;
