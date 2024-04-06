@@ -38,9 +38,16 @@ The following are the main dependencies used in the project:
 - Start the application with expo start.
 - To run on a device or emulator, follow the instructions from the Expo CLI.
 
-
-![Alt text](/screenshots/PostsScreen.jpg)
+## Application snapshots
+SplashScreen:
 ![Alt text](/screenshots/splash.jpg)
+
+HomeScreen:
+![Alt text](/screenshots/PostsScreen.jpg)
+
+PostDetailsScreen with comments visible:
 ![Alt text](/screenshots/PostDetailsComments.jpg)
+
+PostDetailsScreen:
 ![Alt text](/screenshots/PostDetails.jpg)
 
