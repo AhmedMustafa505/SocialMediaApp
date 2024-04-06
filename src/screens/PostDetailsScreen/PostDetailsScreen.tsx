@@ -9,7 +9,7 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
-import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 import { RootStackParamList } from "../../navigation/AppNavigator";
 import { AppDispatch, RootState } from "../../store/store";

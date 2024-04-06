@@ -6,8 +6,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 import { HomeScreen, PostDetailsScreen, SplashScreen } from "../screens";
 import { PostProps } from "../components/features/PostCard/interface";
-import { theme } from "../utils/theme";
 import { Dimensions, StyleSheet, View } from "react-native";
+import { theme } from "../utils/theme";
 
 export type RootStackParamList = {
   SplashScreen: undefined;
@@ -32,9 +32,9 @@ const AppNavigator: React.FC = () => {
           options={{
             headerTitle: "Posts",
             headerStyle: {
-              backgroundColor: "#1260d4",
+              backgroundColor: theme.linear1,
             },
-            headerTintColor: "#fff",
+            headerTintColor: theme.white,
             headerTitleStyle: {
               fontWeight: "bold",
             },
@@ -51,7 +51,7 @@ const AppNavigator: React.FC = () => {
                 <HeaderBackButton
                   {...props}
                   onPress={() => navigation.goBack()}
-                  labelVisible={false} // This will remove the 'Back' text
+                  labelVisible={false}
                   backImage={() => (
                     <View style={{}}>
                       <MaterialIcons name="arrow-back" size={21} color="#fff" />
@@ -62,9 +62,9 @@ const AppNavigator: React.FC = () => {
             ),
             headerTitle: "Post details",
             headerStyle: {
-              backgroundColor: "#1260d4",
+              backgroundColor: theme.linear1,
             },
-            headerTintColor: "#fff",
+            headerTintColor: theme.white,
             headerTitleStyle: {
               fontWeight: "bold",
             },
